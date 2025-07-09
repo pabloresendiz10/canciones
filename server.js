@@ -37,9 +37,9 @@ const server = app.listen(port, () => {
 })
 
 //manejador de error 404
-/*app.use((req,res,next) => {
+app.use((req,res,next) => {
     next(createError(404))
-})*/
+})
 
 //manejador de errores
 app.use(function(err,req,res,next) {
